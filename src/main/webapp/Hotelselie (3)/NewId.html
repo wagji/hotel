@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원가입 폼</title>
+        <link rel="icon" href="./images/images2/favicon.png" />
+        <link rel="stylesheet" href="./quiz07.css" />
+        <link rel="stylesheet" href="css/style2.css">
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body class="c1">
+        <header>
+            <nav id="navbar">
+                <div class="header-top-nav">
+                    <h1 class="logo"><a href="index.html">elie</a></h1>
+                    <ul>
+                        <li><a href="home.html">홈</a></li>
+                        <li><a href="hotel.html">호텔</a></li>
+                        <li>
+                            <a class="current" href="airplane.html">항공</a>
+                        </li>
+                        <li><a href="complet.html">예약자</a></li>
+                        <li><a href="NewId.html">아이디생성</a></li>
+                        <li><a href="test.html">테스트</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="showcase">
+                <video id="video-background" autoplay muted loop>
+                    <source src="./img/air (3).mp4" type="video/mp4" />
+                </video>
+            </div>
+        </header>
+
+      <main>
+        <div class="member">
+            
+            <div id="showcase">
+                <video id="video-background" autoplay muted loop>
+                    <source src="./img/videoplayback (1).mp4" type="video/mp4" />
+                </video>
+            </div>
+            <!-- Signup Form -->
+            <form id="signupForm">
+                <div class="c1 field">
+                    <b class="c1">아이디</b>
+                    <span class="placehold-text"
+                        ><input type="text" id="username" required
+                    /></span>
+                </div>
+
+                <div class="c1 field">
+                    <b class="c1">비밀번호</b>
+                    <input
+                        class="c1 userpw"
+                        type="password"
+                        id="password"
+                        required
+                    />
+                </div>
+
+                <div class="field">
+                    <b class="c1">비밀번호 재확인</b>
+                    <input
+                        class="c1 userpw-confirm"
+                        type="password"
+                        id="confirmPassword"
+                        required
+                    />
+                </div>
+                <div class="field">
+                    <b class="c1">이름</b>
+                    <input type="text" />
+                </div>
+
+                <div class="field birth">
+                    <b>생년월일</b>
+                    <div>
+                        <input type="number" placeholder="년(4자)" />
+                        <select>
+                            <option value="">월</option>
+                            <!-- ... (months) ... -->
+                        </select>
+                        <input type="number" placeholder="일" />
+                    </div>
+                </div>
+
+                <div class="c1" class="field gender">
+                    <b>성별</b>
+                    <div class="c1">
+                        <label><input type="radio" name="gender" />남자</label>
+                        <label><input type="radio" name="gender" />여자</label>
+                        <label
+                            ><input type="radio" name="gender" />선택안함</label
+                        >
+                    </div>
+                </div>
+
+                <div class="c1" class="field">
+                    <b>본인 확인 이메일<small>(선택)</small></b>
+                    <input type="email" placeholder="선택입력" />
+                </div>
+
+                <div class="field tel-number">
+                    <b>휴대전화</b>
+                    <select>
+                        <option value="">대한민국 +82</option>
+                    </select>
+                    <div>
+                        <input type="tel" placeholder="전화번호 입력" />
+                        <input class="c1" type="button" value="인증번호 받기" />
+                    </div>
+                    <input
+                        class="c1"
+                        type="number"
+                        placeholder="인증번호를 입력하세요"
+                    />
+                </div>
+
+                <input class="c1" type="submit" value="가입하기" />
+            </form>
+
+            <div class="member-footer">
+                <!-- ... (previous footer content) ... -->
+                <div>
+                    <a href="#none">이용약관</a>
+                    <a href="#none">개인정보처리방침</a>
+                    <a href="#none">책임의 한계와 법적고지</a>
+                    <a href="#none">회원정보 고객센터</a>
+                </div>
+            </div>
+            <script>
+                document
+                    .getElementById("signupForm")
+                    .addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        // Validation logic
+                        var username =
+                            document.getElementById("username").value;
+                        var password =
+                            document.getElementById("password").value;
+                        var confirmPassword =
+                            document.getElementById("confirmPassword").value;
+
+                        // Simple validation for required fields
+                        if (!username || !password || !confirmPassword) {
+                            alert("모든 필수 항목을 작성해주세요.");
+                            return;
+                        }
+
+                        // Password match validation
+                        if (password !== confirmPassword) {
+                            alert("비밀번호가 일치하지 않습니다.");
+                            return;
+                        }
+
+                        alert("가입이 완료되었습니다.");
+                    });
+            </script>
+        </div>
+        </main>
+
+        <footer>
+            <section id="contact-info" class="bg-dark">
+                <div class="container">
+                    <div class="box">
+                        <i class="fas fa-hotel fa-3x"></i>
+                        <p>Location</p>
+                        <a href="#none"><p>이용약관</p></a>
+                        <a href="#none"><p>개인정보처리방침</p></a>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <p>전화번호</p>
+                        <p>(+82)123-4567</p>
+                        <a href="#none"><p>회원정보 고객센터</p></a>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <p>이메일주소</p>
+                        <p>wl_dhks@naver.com></p>
+
+                        <a href="#none"><p>책임의 한계와 법적고지</p></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </footer>
+    </body>
+</html>

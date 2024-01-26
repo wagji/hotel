@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Designed by:LjoveX
+         It is 100% free to use-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Dobro dosli u najbolji kafic na svetu"
+        />
+        <meta name="keywords" content="Kafic" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>elie hotels</title>
+        <style>
+           
+        </style>
+    </head>
+    
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="header-top-nav">
+                    <h1 class="logo"><a href="home.html">elieshotels</a></h1>
+                    <ul>
+                        <li><a href="home.html">홈</a></li>
+                        <li><a href="hotel.html">호텔</a></li>
+                        <li>
+                            <a class="current" href="airplane.html">항공</a>
+                        </li>
+                        <li><a href="complet.html">예약자</a></li>
+                        <li><a href="NewId.html">아이디생성</a></li>
+                        <li><a href="test.html">테스트</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <video id="video-background" autoplay muted loop>
+                <source
+                    src="./img/videoplayback (1).mp4"
+                    type="video/mp4"
+                />
+            </video>
+        </div>
+        </header>
+        <div id="wrap">
+
+        <main>
+            <section class="c3" id="loginSection" style="width: 50%;">
+                <h2>로그인</h2>
+                <form id="loginForm">
+                    <label for="username">id:</label>
+                    <input type="text" id="username" name="username" required />
+
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+
+                    <button type="button">로그인</button>
+                    <a class="a" href="NewId.html">아이디 생성</a>
+                </form>
+             
+                <button type="button" onclick="searchHotels()">
+                    호텔찾기 
+                 </button>
+                 <button type="button" onclick="searchFlights()">
+                    비행기찾기
+                 </button>
+                       
+                          
+
+               
+            </section>
+
+            <section id="searchSection" style="width: 50%;">
+                <h2>호텔과 항공 검색</h2>
+                <form class="S1" id="searchForm">
+                    <label for="location">위치:</label>
+                    <input type="text" id="location" name="location" required />
+
+                    <label for="checkin">체크인날짜:</label>
+                    <input type="date" id="checkin" name="checkin" required />
+
+                    <label for="checkout">체크아웃날짜:</label>
+                    <input type="date" id="checkout" name="checkout" required />
+
+                    <label for="flightType">왕복/편도:</label>
+                    <select id="flightType" name="flightType">
+                        <option value="oneWay">편도행</option>
+                        <option value="roundTrip">왕복행</option>
+                    </select>
+
+                    <label for="departureCountry">출발 국가</label>
+                    <input
+                        type="text"
+                        id="departureCountry"
+                        name="departureCountry"
+                        required
+                    />
+
+                    <label for="arrivalCountry">도착국가</label>
+                    <input
+                        type="text"
+                        id="arrivalCountry"
+                        name="arrivalCountry"
+                        required
+                    />
+
+                    <label for="passengers">승객인원:</label>
+                    <input
+                        type="number"
+                        id="passengers"
+                        name="passengers"
+                        min="1"
+                        required
+                    />
+
+                 
+                </form>
+                <div class="btn">
+                    <a href="complet.html">예약하기</a>
+                </div>
+                <div id="hotelList"></div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="contact-info" class="bg-dark">
+                <div class="container">
+                    <div class="box">
+                        <i class="fas fa-hotel fa-3x"></i>
+                        <p>Location</p>
+                        <a href="#none"><p>이용약관</p></a>
+                        <a href="#none"><p>개인정보처리방침</p></a>
+                        
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <p>전화번호</p>
+                        <p>(+82)123-4567</p>
+                        <a href="#none"><p>회원정보 고객센터</p></a>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <p>이메일주소</p>
+                        <p>wl_dhks@naver.com></p>
+                        
+                        <a href="#none"><p>책임의 한계와 법적고지</p></a>
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </footer>
+    
+    </body>
+</html>

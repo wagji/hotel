@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="AreaExtension.css" />
+        <title>Hotel Website | Gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="header-top-nav">
+                    <h1 class="logo"><a href="home.html">elie</a></h1>
+                    <ul>
+                        <li><a href="home.html">홈</a></li>
+                        <li><a href="hotel.html">호텔</a></li>
+                        <li>
+                            <a class="current" href="airplane.html">항공</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="showcase">
+                <video id="video-background" autoplay muted loop>
+                    <source
+                        src="./img/videoplayback (1).mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+        </header>
+
+        <figure class="snip1200">
+            <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg"
+                alt="sq-sample27"
+            />
+            <figcaption>
+                <p>
+                    I say, if your knees aren't green by the end of the day, you
+                    ought to seriously re-examine your life.
+                </p>
+                <div class="heading">
+                    <h2>My<span> Hobby</span></h2>
+                </div>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+
+        <figure class="snip1200 hover">
+            <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample31.jpg"
+                alt="sq-sample31"
+            />
+            <figcaption>
+                <p>
+                    The inside of my head was exploding with fireworks.
+                    Fortunately, my last thought turned out the lights when it
+                    left.
+                </p>
+                <div class="heading">
+                    <h2>My<span> Work</span></h2>
+                </div>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+
+        <figure class="snip1200">
+            <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg"
+                alt="sq-sample32"
+            />
+            <figcaption>
+                <p>
+                    That's the difference between me and the rest of the world!
+                    Happiness isn't good enough for me! I demand euphoria!
+                </p>
+                <div class="heading">
+                    <h2>My <span> Dream</span></h2>
+                </div>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <script>
+            /* Demo purposes only */
+            $(".hover").mouseleave(function () {
+                $(this).removeClass("hover");
+            });
+        </script>
+
+        <footer>
+            <section id="contact-info" class="bg-dark">
+                <div class="container">
+                    <div class="box">
+                        <i class="fas fa-hotel fa-3x"></i>
+                        <p>Location</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <p>전화번호</p>
+                        <p>(+82)123-4567</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <p>이메일주소</p>
+                        <p>wl_dhks@naver.com></p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

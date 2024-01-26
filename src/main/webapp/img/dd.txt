@@ -1,0 +1,106 @@
+<!-- Signup Form -->
+			<form id="signupForm">
+				<div class="c1 field">
+					<b class="c1">아이디</b> <span class="placehold-text"><input
+						type="text" id="username" required /></span>
+				</div>
+
+				<div class="c1 field">
+					<b class="c1">비밀번호</b> <input class="c1 userpw" type="password"
+						id="password" required />
+				</div>
+
+				<div class="field">
+					<b class="c1">비밀번호 재확인</b> <input class="c1 userpw-confirm"
+						type="password" id="confirmPassword" required />
+				</div>
+				<div class="field">
+					<b class="c1">이름</b> <input type="text" />
+				</div>
+
+				<div class="field birth">
+					<b>생년월일</b>
+					<div>
+						<input type="number" placeholder="년(4자)" /> <select>
+							<option value="">월</option>
+							<!-- ... (months) ... -->
+						</select> <input type="number" placeholder="일" />
+					</div>
+				</div>
+
+				<div class="c1" class="field gender">
+					<b>성별</b>
+					<div class="c1">
+						<label><input type="radio" name="gender" />남자</label> <label><input
+							type="radio" name="gender" />여자</label> <label><input
+							type="radio" name="gender" />선택안함</label>
+					</div>
+				</div>
+
+				<div class="c1" class="field">
+					<b>본인 확인 이메일<small>(선택)</small></b> <input type="email"
+						placeholder="선택입력" />
+				</div>
+
+				<div class="field tel-number">
+					<b>휴대전화</b> <select>
+						<option value="">대한민국 +82</option>
+					</select>
+					<div>
+						<input type="tel" placeholder="전화번호 입력" /> <input class="c1"
+							type="button" value="인증번호 받기" />
+					</div>
+					<input class="c1" type="number" placeholder="인증번호를 입력하세요" />
+				</div>
+
+				<input class="c1" type="submit" value="가입하기" />
+			</form>
+
+	<h1>새 Customer 등록</h1>
+		<form method="post" action="insertCustomer.customer">
+			<div class="form-container">
+				<div class="form-group">
+					<label for="CustomerNumber">CustomerNumber</label> <input
+						type="text" id="CustomerNumber" name="CustomerNumber">
+				</div>
+
+				<div class="form-group">
+					<label for="CustomerName">CustomerName</label> <input type="text"
+						id="CustomerName" name="CustomerName">
+				</div>
+
+				<div class="form-group">
+					<label for="PhoneNumber">PhoneNumber</label>
+					<textarea id="PhoneNumber" name="PhoneNumber" rows="10" cols="40"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="ResidentRegistrationNumber">ResidentRegistrationNumber</label>
+					<textarea id="ResidentRegistrationNumber"
+						name="ResidentRegistrationNumber" rows="10" cols="40"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="Email">Email</label>
+					<textarea id="Email" name="Email" rows="10" cols="40"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="Password">Password</label> <input type="text"
+						id="Password" name="Password" size="10">
+				</div>
+
+				<div class="form-group">
+					<label for="Address">Address</label>
+					<textarea id="Address" name="Address" rows="10" cols="40"></textarea>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" value="새 맴버 등록">
+				</div>
+			</div>
+		</form>
+
+		<br> <a href="http://localhost:8081/HOTEL"> 홈으로 </a>
+		<p />
+		<a href="getCustomerList.customer"> 맴버 목록 </a>
